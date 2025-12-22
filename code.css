@@ -1,0 +1,161 @@
+/* ========================================
+   DESIGN 2: Clean Academic Professional (Blue)
+   ======================================== */
+.design-2 {
+    font-family: 'Georgia', serif;
+    background: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.8;
+    padding: 50px 20px;
+}
+
+.design-2 h1 {
+    font-size: 2.5em;
+    color: #1a3a5c;
+    border-bottom: 4px solid #2196f3;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.design-2 table {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 2px 15px rgba(33, 150, 243, 0.12);
+    border-left: 5px solid #2196f3;
+}
+
+.design-2 table td {
+    padding: 18px;
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+.design-2 table[border="1"] {
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.design-2 table[border="1"] td {
+    border: 1px solid #e0e0e0;
+    padding: 18px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.design-2 table[border="1"] tr:first-child td {
+    background: #2196f3;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.design-2 table[border="1"] tr:not(:first-child):hover td {
+    background: #e3f2fd;
+    transform: scale(1.02);
+}
+
+.design-2 strong {
+    color: #1976d2;
+    font-weight: 700;
+}
+
+.design-2 p {
+    font-size: 1.05em;
+    margin: 12px 0;
+    color: #34495e;
+}
+
+.design-2 ul {
+    list-style: disc;
+    padding-left: 25px;
+    color: #555;
+}
+
+.design-2 ul li {
+    padding: 6px 0;
+}
+
+/* ========================================
+   SIDE-BY-SIDE TABLES SECTION
+   ======================================== */
+
+/* Container for the side-by-side tables */
+.design-2 .tables-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Individual table wrapper */
+.design-2 .table-wrapper {
+    flex: 1;
+    min-width: 500px;
+    max-width: 650px;
+}
+
+/* Styling for the heading above each table */
+.design-2 .table-wrapper > p {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #1a3a5c;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.design-2 .table-wrapper > p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #2196f3;
+}
+
+/* Tables inside the wrapper */
+.design-2 .table-wrapper table[border="1"] {
+    width: 100%;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(33, 150, 243, 0.15);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+    .design-2 .tables-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .design-2 .table-wrapper {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .design-2 .table-wrapper {
+        min-width: 100%;
+    }
+
+    .design-2 table[border="1"] {
+        font-size: 0.9em;
+    }
+
+    .design-2 table[border="1"] td {
+        padding: 12px 10px;
+    }
+}
